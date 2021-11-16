@@ -18,7 +18,7 @@ import (
 
 func main() {
 
-	a1 := cantor_pair_calculate(9, 1) // first pair
+	a1 := cantor_pair_calculate(9, 1) // first pair 1
 
 	a2 := cantor_pair_calculate(6, 8) // second pair
 
