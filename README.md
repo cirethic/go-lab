@@ -16,3 +16,15 @@ cantor  pair function  reference
     
     
     
+    go run main.go
+    
+    **func cantor_pair_calculate()**
+    33, 1  =>  596
+    6, 8  =>  113
+    596, 113  =>  251808
+    
+    **func cantor_pair_reverse()**
+    251808 =>  596, 113
+    596 => 33, 1
+    113 => 6, 8
+    
