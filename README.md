@@ -1,5 +1,4 @@
-# go-math
-fun math - what could be done differently in Go
+# Cantor pair function in Go
 
 **1. cantor pair function**
 
