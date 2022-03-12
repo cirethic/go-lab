@@ -1,0 +1,42 @@
+Unit testing Solidity contracts on Ethereum with Go
+
+
+https://medium.com/coinmonks/unit-testing-solidity-contracts-on-ethereum-with-go-3cc924091281
+
+
+1. install prepare
+Go
+go-ethereum
+abigen
+solc
+
+2. windows using wsl2
+if go version or abigen cannot be found. 
+try setup environment. it maby be needed in a new wsl console windows each time:
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/golang
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+source ~/.profile
+
+
+3. abigen go package in Contract folder
+
+abigen --sol ./helloworld.sol --pkg api --out ../go-deploy/helloworld/helloworld.go
+
+
+4. prepare go module
+
+cd ../go-solidity-test/
+
+go mod init go-solc-test/m
+go mod tidy
+
+
+5. run test:
+
+go test -v helloworld*.go
+
+
+
+
